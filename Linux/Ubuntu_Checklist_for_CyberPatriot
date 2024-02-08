@@ -1,0 +1,42 @@
+Ubuntu Checklist for CyberPatriot:
+1.  Forensic Stuff 
+        - Ubuntu Finding UUID
+                cd /home
+                ls
+                id -u <user>
+        - hostnamectl
+        - find checksum of file
+        - locate cert files and copy keyid
+        - find ip range (ip address)
+        - locate possible backdoor scripts
+
+2. Virus and Malware ?
+        -sudo apt install clamscan (if possible)
+
+3. User Management
+        -Remove unauthorized users
+        -Check who should/shouldn't have admin
+        -Change insecure passwords to passwords containing a combination
+         of: Upper and lowercase letters, numbers, and special characters, and maybe 10 char length
+        -Add newly hired users
+
+4. Update Programs to lastest versions (Firefox)
+
+5. Check Firefox settings
+        -Check if company requires FireFox to be default browser
+        -Enable Firefox security settings
+
+6. Remove unauthorized software through the installed Ubuntu Software tab
+        - Netcat, Nmap, Hashcat, games
+
+7. Disable Unnecessary Services
+        - systemctl list-units --type=service --state=active
+        - sudo systemctl stop (service)
+        - sudo systemctl disable (service)
+
+8. Enable automatic security and important updates
+        - Check for updates Daily
+        - Prompt to Download and Install automatically
+
+9. Enable password policies
+        - Password age
